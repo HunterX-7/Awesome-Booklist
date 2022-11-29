@@ -1,6 +1,8 @@
 let books = [];
 
 const book = document.getElementById('book');
+const forma = document.querySelector('form');
+const suma = 1;
 
 function Book(title, author) {
   this.title = title;
@@ -21,13 +23,7 @@ function addBook() {
   }
 }
 
-addBook();
-
-const forma = document.querySelector('form');
-const suma = 1;
-
-forma.addEventListener('submit', (e) => {
-  e.preventDefault();
+const addSingleBook = (() => {
   let id = 0;
 
   if (books.length === 0) {
@@ -55,6 +51,15 @@ forma.addEventListener('submit', (e) => {
   localStorage.setItem('books', JSON.stringify(books));
 });
 
+forma.addEventListener('submit', (e) => {
+  e.preventDefault();
+  addSingleBook();
+});
+
+const removeBooks = () => {
+  localStorage.setItem('books', JSON.stringify(books));
+};
+
 book.addEventListener('click', (e) => {
   if (e.target.textContent === 'x') {
     const booksId = e.target.parentElement;
@@ -62,7 +67,7 @@ book.addEventListener('click', (e) => {
     books.splice(id, 1);
     booksId.remove();
   }
-  localStorage.setItem('books', JSON.stringify(books));
+  removeBooks();
 });
 
 window.addEventListener('load', () => {
