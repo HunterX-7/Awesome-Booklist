@@ -48,6 +48,10 @@ forma.addEventListener('submit', (e) => {
     </div>
     `;
   book.innerHTML += bookData;
+  const titleValue = document.getElementById('title');
+  const authorValue = document.getElementById('author');
+  titleValue.value = '';
+  authorValue.value = '';
   localStorage.setItem('books', JSON.stringify(books));
 });
 
