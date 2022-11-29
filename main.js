@@ -13,7 +13,7 @@ function addBook() {
         <div id="book${i}">
             <h2>${books[i].title}</h2>
             <p>${books[i].author}</p>
-            <button class="remove">x</button>
+            <button id="${i}" class="remove">x</button>
             <hr>
         </div>
         `;  
@@ -44,7 +44,7 @@ forma.addEventListener('submit', (e)=> {
     <div id="${id}">
         <h2>${y.title}</h2>
         <p>${y.author}</p>
-        <button class="remove">x</button>
+        <button id="${y}" class="remove">x</button>
         <hr>
     </div>
     `;  
@@ -53,18 +53,18 @@ forma.addEventListener('submit', (e)=> {
 });
 
 
-
 book.addEventListener('click', (e)=> {
-    
-    console.log(e.target.xButton);
-
     if(e.target.textContent === 'x'){
         let booksId = e.target.parentElement;
+        let id = e.target.id;
+        console.log(id);
+        const arr = [...books]
+        console.log(arr)
+        books.splice(id, 1);
+        console.log(books);
         booksId.remove();
-        let index = books.findIndex(book=> {
-            return console.log(book.id);
-        })
     }
+    localStorage.setItem('books', JSON.stringify(books));
 })
 
 window.addEventListener('load', () => {
