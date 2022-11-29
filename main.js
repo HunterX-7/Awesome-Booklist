@@ -1,29 +1,11 @@
-var books = [
-    {
-        title: 'The little prince',
-        author: 'Antoine de Saint-Exupéry' 
-    },
-    {
-        title: 'The figth club',
-        author: 'Chuck Palahniuk' 
-    }
-]
+var books = []
 
 const book =  document.getElementById('book');
-let t = document.getElementById('title').value;
-let a = document.getElementById('author').value;
-let t1 = JSON.stringify(t);
-let a1 = JSON.stringify(a);
 
 function Book(title, author) {
     this.title = title; 
     this.author = author;
 }
-
-const x = new Book("book1", "author1");
-console.log(x)
-
-books.push(x)
 
 function addBook() {
     for(let i = 0; i < books.length; i++){
@@ -67,6 +49,7 @@ forma.addEventListener('submit', (e)=> {
     <hr>
     `;  
     book.innerHTML += bookData;
+    localStorage.setItem('books', JSON.stringify(books));
 });
 
 const xButton = document.getElementsByClassName('remove')
@@ -78,42 +61,14 @@ book.addEventListener('click', (e)=> {
    }
 })
 
+window.addEventListener('load', () => {
 
+   let content = JSON.parse(localStorage.getItem('books'))
 
-forma.addEventListener('input', () => {
-
-    const data = {
-        title: title.value,
-        author: author.value,
-    };
-
-    localStorage.setItem('userData', JSON.stringify(data));
-
+   if (content === null){
+    localStorage.setItem(('books', JSON.stringify(books)));
+   }else {
+    books = content;
+    addBook();
+    }
 })
-
-let getData = localStorage.getItem('userData');
-getData = JSON.parse(getData)
-
-if (getData != null) {
-    title.value = getData.title;
-    author.value = getData.author;
-}
-
-// document.addEventListener('DOMContentLoaded', ()=> {
-//     const dataUnstr = JSON.parse(localStorage.getItem('data'));
-// })
-
-// function getBooks() {
-//     if(localStorage.getItem('books') === null){
-//         books = [];
-//     }
-//     else {
-//         books = JSON.parse(localStorage.getItem('books'))
-//     }
-// }
-
-// function storeBooks() {
-//     const books = 
-// }
-
-console.log(books);
