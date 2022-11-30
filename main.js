@@ -56,18 +56,18 @@ forma.addEventListener('submit', (e) => {
   addSingleBook();
 });
 
-const removeBooks = () => {
-  localStorage.setItem('books', JSON.stringify(books));
-};
-
-book.addEventListener('click', (e) => {
+const removeSingleBook = (e) => {
   if (e.target.textContent === 'x') {
     const booksId = e.target.parentElement;
     const { id } = e.target;
     books.splice(id, 1);
     booksId.remove();
   }
-  removeBooks();
+  localStorage.setItem('books', JSON.stringify(books));
+};
+
+book.addEventListener('click', (e) => {
+  removeSingleBook(e);
 });
 
 window.addEventListener('load', () => {
