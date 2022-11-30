@@ -142,3 +142,34 @@ document.getElementById('book-list').addEventListener('click', (e) => {
   Interface.removeBook(e.target);
   LocalStorage.removeBookFromStorage(e.target.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent);
 });
+
+const home = document.getElementById('home');
+const add = document.getElementById('add');
+const contact = document.getElementById('contact');
+
+const gethome = document.getElementById('get-home');
+const getadd = document.getElementById('get-add');
+const getcontact = document.getElementById('get-contact');
+
+getcontact.addEventListener('click', (e) => {
+  e.preventDefault();
+  home.style.display = 'none';
+  contact.style.display = 'block';
+  add.style.display = 'none';
+} );
+
+getadd.addEventListener('click', (e) => {
+  e.preventDefault();
+  home.style.display = 'none';
+  contact.style.display = 'none';
+  add.style.display = 'block';
+});
+
+gethome.addEventListener('click', (e) => {
+  e.preventDefault();
+  home.style.display = 'block';
+  contact.style.display = 'none';
+  add.style.display = 'none';
+});
+
+
