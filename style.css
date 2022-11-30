@@ -2,3 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
+.hr {
+  margin: auto;
+  width: 10%;
+  border: 1px solid #d3d3d3;
+  opacity: 1;
+}
