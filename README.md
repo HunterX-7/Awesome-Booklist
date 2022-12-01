@@ -22,13 +22,10 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 # 📖 Awesome-Booklist <a name="about-project"></a>
@@ -43,11 +40,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Add a book to the list and display it**
 - **Remove a book to the list and remove it**
 - **Use of local storage to preserve data when books are added or deleted**
+
+### 🚀 Live Demo <a name="live-demo"></a>
+
+[Live Demo Link](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
