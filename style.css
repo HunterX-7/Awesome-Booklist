@@ -1,3 +1,7 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 .hr {
   margin: auto;
   width: 10%;
@@ -49,14 +53,12 @@ a {
   display: none;
   height: 87vh;
   padding-top: 15%;
-  padding-left: 15%;
   align-content: center;
   justify-content: center;
-  font-size: 1.5vw;
 }
 
 footer {
-  font-size: 1.5vw;
+  font-size: 14px;
   display: flex;
   background-color: lightslategray;
   height: 5vh;
