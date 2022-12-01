@@ -1,6 +1,5 @@
 * {
-  margin: 0;
-  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hr {
@@ -8,4 +7,64 @@
   width: 10%;
   border: 1px solid #d3d3d3;
   opacity: 1;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 4%;
+  align-items: center;
+  background-color: lightslategray;
+  height: 6vh;
+  padding-right: 3%;
+}
+
+.logo {
+  position: absolute;
+  left: 3%;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.awesome-books {
+  height: 87vh;
+  width: 100%;
+}
+
+.add-new {
+  padding-top: 15%;
+  display: none;
+  height: 87vh;
+}
+
+.btn-add {
+  display: flex;
+  margin: 0 auto;
+}
+
+.contact {
+  display: none;
+  height: 87vh;
+  padding-top: 15%;
+  align-content: center;
+  justify-content: center;
+}
+
+footer {
+  font-size: 14px;
+  display: flex;
+  background-color: lightslategray;
+  height: 5vh;
+}
+
+footer > p {
+  margin: 0 auto;
+  align-self: center;
 }
