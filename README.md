@@ -5,7 +5,7 @@
   <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h2><b>Awesome-Booklist</b></h2>
 
 </div>
 
@@ -60,7 +60,7 @@ To get a local copy up and running follow these steps:
 
 2. Clone the repository or download the Zip folder:
 
-    **``git clone https://github.com/HunterX-7/Fashion-Week-page.git``**
+    **``git clone https://github.com/HunterX-7/Awesome-Booklist.git``**
 
 ### Prerequisites
 
