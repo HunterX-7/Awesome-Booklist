@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./images/Books.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h2><b>Awesome-Booklist</b></h2>
