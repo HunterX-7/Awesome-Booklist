@@ -84,13 +84,13 @@ The following test will run automatically as you try to pull request: -Lighthous
 
 - GitHub: [@HunterX-7](https://github.com/HunterX-7)
 - Twitter: [@franquin07](https://twitter.com/franquin07)
-- LinkedIn: [Francisco Quintero](https://www.linkedin.com/in/francisco-asis-quintero-cede%C3%B1o/)
+- LinkedIn: [Francisco Quintero](https://www.linkedin.com/in/francisco-asis-quintero-cedeno/)
 
 👤 **Emmanuel Cortes**
 
 - GitHub: [@emmanuelcortes2](https://github.com/emmanuelcortes2)
 - Twitter: [@EmmanueCortesP](https://twitter.com/EmmanuelCortesP)
-- LinkedIn: [Emmanuel Cortés Padilla](https://github.com/emmanuelcortes2/MyPortfolio/blob/main/www.linkedin.com/in/emmanuel-cort%C3%A9s-padilla-490982140)
+- LinkedIn: [Emmanuel Cortés Padilla](https://www.linkedin.com/in/emmanuel-cortes-padilla/?locale=en_US)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
